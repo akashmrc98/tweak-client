@@ -1,0 +1,23 @@
+mutation(
+  $firstName: String!
+  $lastName: String!
+  $userName: String!
+  $dob: String!
+  $gender: String!
+  $email: String!
+  $phone: String!
+  $password: String!
+) {
+  createUser(
+    firstName: $firstName
+    lastName: $lastName
+    userName: $userName
+    dob: $dob
+    gender: $gender
+    email: $email
+    phone: $phone
+    password: $password
+  ) {
+    message
+  }
+}
